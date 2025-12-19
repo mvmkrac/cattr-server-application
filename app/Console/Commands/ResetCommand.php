@@ -26,7 +26,7 @@ class ResetCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Cattr flush database';
+    protected $description = 'WorkPulse flush database';
 
     protected array $protectedTables = ['migrations', 'jobs', 'failed_jobs'];
 
@@ -37,7 +37,7 @@ class ResetCommand extends Command
      */
     public function handle(): int
     {
-        if (!$this->option('force') && !$this->confirm('Are you sure want to drop data for your Cattr instance?')) {
+        if (!$this->option('force') && !$this->confirm('Are you sure want to drop data for your WorkPulse instance?')) {
             return 0;
         }
 
