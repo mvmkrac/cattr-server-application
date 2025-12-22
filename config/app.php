@@ -14,7 +14,7 @@ return [
     'json_errors' => env('JSON_ERRORS', true),
     'url' => env('APP_URL', 'http://localhost'),
     'asset_url' => env('ASSET_URL'),
-    'frontend_url' => env('FRONTEND_APP_URL'),
+    'frontend_url' => env('FRONTEND_APP_URL', env('APP_URL')),
     'timezone' => date_default_timezone_get(),
     'languages' => ['en', 'ru'],
     'locale' => 'en',
