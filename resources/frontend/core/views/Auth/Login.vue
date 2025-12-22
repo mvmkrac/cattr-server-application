@@ -7,7 +7,7 @@
                         <div class="static-message">
                             <div class="logo"></div>
                         </div>
-                        <h1 class="login__title">Cattr</h1>
+                        <h1 class="login__title">WorkPulse</h1>
                     </div>
                     <div>
                         <at-alert
@@ -43,7 +43,14 @@
                     <router-link class="link" to="/auth/password/reset">{{ $t('auth.forgot_password') }}</router-link>
                 </validation-observer>
             </div>
-            <a class="login__slogan" href="https://cattr.app" v-html="slogan" />
+            <a
+                class="login__slogan"
+                href="https://hiretrainva.com"
+                target="_blank"
+                rel="noopener"
+            >
+                {{ slogan }}
+            </a>
         </div>
         <div class="hero col-lg-16 col-md-14 col-sm-12"></div>
     </div>
@@ -261,8 +268,7 @@
         }
 
         .hero {
-            background: url('../../assets/login.svg') #6159e6;
-            background-repeat: no-repeat;
+            background: #325c7f url('../../assets/login.svg') no-repeat;
             background-size: 100%;
             display: flex;
         }
